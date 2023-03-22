@@ -1,5 +1,11 @@
 {%extends 'base.html'%}
 {%block content%}
-    <h1>Hola</h1>
+    <ul>
+    {%for task in response.completed%}
+
+        <li>{{task.name}}</li>
+
+    {%endfor%}
+    </ul>
 
 {%endblock%}
